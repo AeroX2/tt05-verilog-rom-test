@@ -10,6 +10,7 @@ module tt_um_seven_segment_seconds #( parameter MAX_COUNT = 24'd10_000_000 ) (
     input  wire       clk,      // clock
     input  wire       rst_n     // reset_n - low to reset
 );
+	assign ena = 1'b1;
 	wire rst = !rst_n;
 
 	reg [15:0] i;
