@@ -28,6 +28,6 @@ module tt_um_seven_segment_seconds #( parameter MAX_COUNT = 24'd10_000_000 ) (
 		pc <= pc + 1;
 	end
 
-	assign uo_out = rom[{8'b00000000, ui_in}];
+	assign uo_out = rom[ui_in];
 
 endmodule
